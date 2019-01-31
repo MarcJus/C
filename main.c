@@ -1,6 +1,22 @@
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
+
+int gagne(){
+
+}
+
+char lireCaractere(){
+	char caractere=0;
+
+	caractere=getchar();
+	caractere=toupper(caractere);
+
+	while(getchar() != '\n');
+
+	return caractere;
+}
 
 int main(int argc, char* argv[]){
 	 char lettre=0;
@@ -18,6 +34,9 @@ int main(int argc, char* argv[]){
 			 }else{
 				 printf("*");
 			 }
+			 printf("\nProposez une lettre : ");
+			 lettre=lireCaractere();
+
 		 }
 	 }
 
