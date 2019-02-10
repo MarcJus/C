@@ -1,3 +1,3 @@
-main.d: ../main.c ../dico.h
+main.d: ../main.c ../main.h
 
-../dico.h:
+../main.h:
